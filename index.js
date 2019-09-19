@@ -1,7 +1,7 @@
 'use strict';
 $(function(){
   //get the form ID and create submit function (because it is a form, we use submit)
-  $('#js-shopping-list-form').submit(function() {
+  $('#js-shopping-list-form').submit(function(event) {
     //prevent default behavior of form
     event.preventDefault();
     //grab the user input value
