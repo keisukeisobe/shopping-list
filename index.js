@@ -5,7 +5,8 @@ $(function(){
     //prevent default behavior of form
     event.preventDefault();
     //grab the user input value
-    const userInput = $(this.find('#shopping-list-entry').val());
+    console.log('hi');
+    const userInput = $(this).find('#shopping-list-entry').val();
     //find the unordered list ('shopping-list') and then append to it
     $('.shopping-list').append(
       `<li>
